@@ -1,0 +1,169 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-
+serif;
+    background-color: #282c34;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #f0f0f0;
+}
+
+.container {
+    background-color: #3a3f4b;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    width: 100%;
+    max-width: 550px;
+    text-align: center;
+    border: 1px solid #555a66;
+}
+
+h1 {
+    font-size: 26px;
+    margin-bottom: 25px;
+    font-family: 'Poppins', sans-serif;
+    color: #e0e0e0;
+}
+
+input[type="text"] {
+    width: 85%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1.5px solid #555a66;
+    border-radius: 6px;
+    font-size: 16px;
+    background-color: #2f333d;
+    color: #e0e0e0;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #8a2be2;
+    outline: none;
+}
+
+button, label {
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+    border: none;
+    transition: background-color 0.3s ease;
+    min-width: 120px;
+    font-family: 'Poppins', sans-serif; /* Apply Poppins to buttons and labels */
+}
+
+button {
+    background-color: #8a2be2;
+    color: #fff;
+}
+
+button:hover {
+    background-color: #9932cc;
+}
+
+label {
+    background-color: #4CAF50;
+    color: white;
+    position: relative;
+}
+
+label:hover {
+    background-color: #45a049;
+}
+
+label input[type="file"] {
+    display: none;
+}
+
+label span.filename {
+    display: none;
+    margin-left: 10px;
+    font-size: 14px;
+    color: #e0e0e0;
+}
+
+label.file-selected {
+    background-color: #3a3f4b;
+    color: #e0e0e0;
+    border: 1px solid #555a66;
+    cursor: default;
+}
+
+label.file-selected span.filename {
+    display: inline;
+}
+
+.output-container {
+    margin-top: 25px;
+    background-color: #3a3f4b;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: left;
+    position: relative;
+    border: 1px solid #555a66;
+    color: #e0e0e0;
+    justify-content: center;
+    align-items: center;
+}
+
+.output-text {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+    height: 100px;
+    overflow: hidden;
+}
+
+.highlight {
+    color: #8a2be2; /* Vibrant purple highlight text */
+    font-weight: bold;
+    background-color: #4b0082; /* Dark purple background for highlight */
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+.copy-btn {
+    background-color: #ffc107; /* Gold/yellow color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+    border: none; /* Removes any default border */
+}
+
+.copy-btn:hover {
+    background-color: #e0a800; /* Darker gold/yellow on hover */
+    cursor: pointer; /* Shows pointer cursor on hover */
+}
+
+/* Position the restart button at the top-right corner */
+#restartButton {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensure the button is on top of other elements */
+}
+
+/* Add a hover effect to the button */
+#restartButton:hover {
+    background-color: #0056b3;
+}

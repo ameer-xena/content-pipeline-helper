@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Pipeline Helper</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Content Pipeline Helper</h1>
+
+        <!-- URL Input -->
+        <div id="textInputContainer">
+            <input type="text" id="urlInput" placeholder="Enter your link here" />
+            <button onclick="processUrl()">Proceed <span> ↗ </span></button>
+        </div>
+
+        <!-- File Upload Section -->
+        <div id="fileInputContainer" style="display:none; margin-top: 20px;">
+            <input type="file" id="fileInput" accept=".txt" style="display:none;" onchange="handleFileUpload()" />
+            <label for="fileInput">Upload Subtitle <span> ↑ </span></label>
+        </div>
+
+        <!-- Output Section -->
+        <div class="output-container" id="outputContainer" style="display:none;">
+            <!-- <p> Prompt:
+                <textarea id="promptTextArea">
+                </textarea>
+            </p> -->
+            <button class="copy-btn" onclick="copyToClipboard()" title="Copy">
+                Copy Prompt to Clipboard 📋
+            </button>
+            <p class="output-text" id="formattedText" style="display: none;">
+                Here is your text: <span class="highlight" id="highlightedText"></span>
+            </p>
+        </div>
+
+        <!-- Inline JavaScript with onclick to reload the page -->
+        <button id="restartButton" onclick="location.reload();">Restart ⟳ </button>
+    </div>
+</body>
+
+</html>
